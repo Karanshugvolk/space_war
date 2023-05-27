@@ -12,13 +12,7 @@ class RedShip(pg.sprite.Sprite):
         self.rect.center = 50, H/2
 
     def update(self):
-        self.speed = 0
         keystate = pg.key.get_pressed()
-        if keystate[pg.K_a]:
-            self.speed = -8
-        if keystate[pg.K_d]:
-            self.speed = 8
-        self.rect.x += self.speed
 
         self.speed = 0
         if keystate[pg.K_w]:
